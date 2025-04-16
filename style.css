@@ -1,143 +1,130 @@
  body {
-     font-family: Arial, sans-serif;
-     background-image: url('https://tinypic.host/images/2025/04/12/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg');
-     background-position: center;
-     background-repeat: no-repeat;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     margin: 0;
+   font-family: Arial, sans-serif;
+   background-image: url('https://tinypic.host/images/2025/04/12/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
  }
 
  form {
-     display: block;
-     background-color: rgba(30, 30, 30, 0.45);
-     backdrop-filter: blur(5px);
-     margin-bottom: 50px;
-     padding: 50px;
-     border-radius: 10px;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
- 
-  }
-  
- 
-  
+   display: block;
+   background-color: rgba(30, 30, 30, 0.45);
+   backdrop-filter: blur(5px);
+   margin-bottom: 50px;
+   padding: 50px;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
- h1 {
-     margin: 50px auto;
-     justify-content: center;
-     color: whitesmoke;
-     font-size: 350%;
-     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
  }
 
-
+ h1 {
+   margin: 50px auto;
+   justify-content: center;
+   color: whitesmoke;
+   font-size: 350%;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ }
 
  label {
-     display: block;
-     margin-bottom: 5px;
-     font-weight: bold;
-     color: whitesmoke;
-     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+   color: whitesmoke;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
  }
 
  input[type="text"],
  input[type="number"],
  input[type="password"],
- input[type="date"],input[type="email"],
+ input[type="date"],
+ input[type="email"],
  textarea,
  select {
-    color: #5c5c5c; 
-    width: 100%;
-     padding: 8px 10px;
-     margin-bottom: 15px;
-     border: 0.5px solid #ccc;
-     border-radius: 5px;
-     box-sizing: border-box;
-     transition: border-color 0.3s ease;
+   color: #5c5c5c;
+   width: 100%;
+   padding: 8px 10px;
+   margin-bottom: 15px;
+   border: 0.5px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
  }
 
  textarea {
-     resize: vertical;
+   resize: vertical;
  }
 
  input[type="checkbox"],
  input[type="radio"] {
-     margin-right: 8px;
+   margin-right: 8px;
  }
 
  input[type="submit"] {
-    background-color: #00cc88;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  input[type="submit"]:hover {
-    transform: scale(1.05);
-    background-color: rgb(0, 170, 119);
-  }
-  
-  input[type="submit"] {
-    background-color: #00cc88;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease;
-    animation: glowPulse 2s infinite;
-  }
-  
-  @keyframes glowPulse {
-    0% {
-      box-shadow: 0 0 5px #00cc88;
-    }
-    50% {
-      box-shadow: 0 0 20px #00ffae;
-    }
-    100% {
-      box-shadow: 0 0 5px #00cc88;
-    }
-  }
-  
+   background-color: #00cc88;
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   border-radius: 6px;
+   cursor: pointer;
+   animation: glowPulse 2s infinite;
+   transition: transform 0.3s ease, background-color 0.3s ease;
+ }
 
-  #cancelar {
-    background: none;
-    border: none;
-    color: rgb(0, 170, 119); 
-    font-size: 14px;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: color 0.3s ease;
-  }
-  
-  #cancelar:hover {
-    color: #ff0000; 
-  }
-  
-  
+ input[type="submit"]:hover {
+   transform: scale(1.05);
+   background-color: rgb(0, 170, 119);
+ }
+
+ @keyframes glowPulse {
+   0% {
+     box-shadow: 0 0 5px #00cc88;
+   }
+
+   50% {
+     box-shadow: 0 0 20px #00ffae;
+   }
+
+   100% {
+     box-shadow: 0 0 5px #00cc88;
+   }
+ }
+
+
+ #cancelar {
+   background: none;
+   border: none;
+   color: rgb(0, 170, 119);
+   font-size: 14px;
+   cursor: pointer;
+   padding: 10px 20px;
+   transition: color 0.3s ease;
+ }
+
+ #cancelar:hover {
+   color: #ff0000;
+ }
+
+
  p {
-     margin: 10px 0 5px;
-     font-weight: bold;
-     color: whitesmoke;
+   margin: 10px 0 5px;
+   font-weight: bold;
+   color: whitesmoke;
  }
 
  input:focus,
  textarea:focus,
  select:focus {
-     outline: none;
-     border-color: #f1f7f1;
-     box-shadow: 0 0 10px rgba(244, 250, 245, 0.8);
-     transform: scale(1.05);
-     transition: all 0.3s ease;
+   outline: none;
+   border-color: #f1f7f1;
+   box-shadow: 0 0 10px rgba(244, 250, 245, 0.8);/*x, y, radio difuminado*/
+   transform: scale(1.05);
+   transition: all 0.3s ease;
  }
 
 
  .custom-cursor {
-  cursor: url('https://iili.io/30epepl.th.png'), auto;
-}
+   cursor: url('https://iili.io/30UPi6x.th.png'), auto;
+ }
