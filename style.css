@@ -12,9 +12,7 @@
 
  form {
    display: block;
-   background-color: rgba(30, 30, 30, 0.45);
-   backdrop-filter: blur(5px);
-   margin-bottom: 50px;
+  background-color:  #1e1e1e80;
    padding: 50px;
    border-radius: 10px;
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -128,3 +126,4 @@
  .custom-cursor {
    cursor: url('https://iili.io/30UPi6x.th.png'), auto;
  }
+ 
