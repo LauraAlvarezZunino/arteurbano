@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Formulario</title>
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../estilos/style.css">
+  <script defer src="../js/scriptcolor.js"></script>
 </head>
-
 <body>
+
   <div class="custom-cursor">
     <h1>BANK.K</h1>
   </div>
-  <form action="#" method="post">
+  <form action="datos.html" id="form">
 
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre"><br><br>  <!--name es la clave que se usará para identificar el valor del campo-->
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <!--name es la clave que se usará para identificar el valor del campo-->
 
     <label for="edad">Edad:</label><!--for asocia el label con el campo-->
     <input type="number" id="edad" name="edad"><br><br>
@@ -30,16 +31,16 @@
     <input type="email" id="email" name="email"><br><br>
 
     <p>Género:</p>
-    <label><input type="radio" name="genero" value="masculino"> Masculino</label><br>
-    <label><input type="radio" name="genero" value="femenino"> Femenino</label><br>
-    <label><input type="radio" name="genero" value="otro"> Otro</label><br><br>
+    <label><input type="radio" name="genero" value="Masculino"> Masculino</label><br>
+    <label><input type="radio" name="genero" value="Femenino"> Femenino</label><br>
+    <label><input type="radio" name="genero" value="Otro"> Otro</label><br><br>
 
     <label for="pais">País:</label>
     <select id="pais" name="pais">
-      <option value="argentina">Argentina</option>
-      <option value="mexico">México</option>
-      <option value="españa">España</option>
-      <option value="colombia">Colombia</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Mexico">México</option>
+      <option value="España">España</option>
+      <option value="Colombia">Colombia</option>
     </select><br><br>
 
     <label for="color">Color favorito:</label>
@@ -48,11 +49,11 @@
     <label for="comentarios">Comentarios:</label><br>
     <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
 
-    <label><input type="checkbox" name="suscripcion" value="si"> Deseo suscribirme al boletín</label><br><br>
-
-    <input type="submit" value="Enviar">
-    <input type="button" value="Cancelar" id="cancelar">
-
+    <label><input type="checkbox" name="suscripcion" value="Si"> Deseo suscribirme al boletín</label><br><br>
+    <div id="botones">
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Cancelar" id="cancelar">
+    </div>
   </form>
 
 </body>

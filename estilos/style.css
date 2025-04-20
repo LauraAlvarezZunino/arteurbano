@@ -1,6 +1,6 @@
  body {
    font-family: Arial, sans-serif;
-   background-image: url('https://tinypic.host/images/2025/04/12/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg');
+   background-image: url('https://tinypic.host/images/2025/04/19/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg');
    background-position: center;
    background-repeat: no-repeat;
    display: flex;
@@ -8,15 +8,16 @@
    justify-content: center;
    align-items: center;
    margin: 0;
+
  }
 
  form {
    display: block;
-   background-color:  #1e1e1e80;
+   background-color: #1e1e1e80;
    padding: 50px;
    border-radius: 10px;
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-
+   margin-bottom: 50px;
  }
 
  h1 {
@@ -60,6 +61,11 @@
    margin-right: 8px;
  }
 
+ #botones {
+   display: flex;
+   gap: 10px;
+ }
+
  input[type="submit"] {
    background-color: #00cc88;
    color: white;
@@ -69,6 +75,8 @@
    cursor: pointer;
    animation: brilloLate 2s infinite;
    transition: transform 0.3s ease, background-color 0.3s ease;
+   gap: 10px;
+   width: 84px;
  }
 
  input[type="submit"]:hover {
@@ -95,16 +103,17 @@
    background: none;
    border: none;
    color: rgb(0, 170, 119);
-   font-size: 14px;
    cursor: pointer;
-   padding: 10px 20px;
+   padding: 12px 10px;
+   width: 84px;
    transition: color 0.3s ease;
+   border-radius: 6px;
  }
 
  #cancelar:hover {
    color: #ff0000;
- }
 
+ }
 
  p {
    margin: 10px 0 5px;
@@ -117,7 +126,8 @@
  select:focus {
    outline: none;
    border-color: #f1f7f1;
-   box-shadow: 0 0 10px rgba(244, 250, 245, 0.8);/*x, y, radio difuminado*/
+   box-shadow: 0 0 10px rgba(244, 250, 245, 0.8);
+   /*x, y, radio difuminado*/
    transform: scale(1.05);
    transition: all 0.3s ease;
  }
@@ -126,4 +136,33 @@
  .custom-cursor {
    cursor: url('https://iili.io/30UPi6x.th.png'), auto;
  }
- 
+
+
+ .container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+
+ }
+
+ .card {
+   width: 300px;
+   padding: 20px;
+   background-color: #1e1e1e80;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .card h3 {
+   color: whitesmoke;
+   border-bottom: 1px solid whitesmoke;
+   padding-bottom: 5px;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+ }
+
+ .card p {
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   margin: 10px 0;
+ }
