@@ -1,7 +1,7 @@
 const paramsString = window.location.search;
 const searchParams = new URLSearchParams(paramsString);
 const contenedor = document.getElementById("root");
-  contenedor.innerHTML += `
+  contenedor.innerHTML = `
   <div class="card">
       <h3>${searchParams.get("nombre")} ${searchParams.get("edad")} años</h3>
       <p><strong>Email:</strong> ${searchParams.get("email")}</p>

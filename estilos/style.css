@@ -16,7 +16,7 @@
    background-color: #1e1e1e80;
    padding: 50px;
    border-radius: 10px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /*x,y,blur,color*/
    margin-bottom: 50px;
  }
 
@@ -62,7 +62,7 @@
  }
 
  #botones {
-   display: flex;
+   display: inline-block;
    gap: 10px;
  }
 
@@ -73,9 +73,9 @@
    padding: 12px 24px;
    border-radius: 6px;
    cursor: pointer;
-   animation: brilloLate 2s infinite;
-   transition: transform 0.3s ease, background-color 0.3s ease;
-   gap: 10px;
+   animation: brilloLate 2s infinite ease-in-out;
+   transition: transform 0.3s ease, background-color 0.3s ease; /*transition:propiedad-duración-timing*/
+   gap: 10px;  /*ease inicio y final suave*/
    width: 84px;
  }
 
@@ -86,11 +86,11 @@
 
  @keyframes brilloLate {
    0% {
-     box-shadow: 0 0 5px #00cc88;
+     box-shadow: 0 0 5px #00cc88; /*reesplandor sutil*/
    }
 
    50% {
-     box-shadow: 0 0 20px #00ffae;
+     box-shadow: 0 0 20px #00ffae; /*aumenta intensidad*/
    }
 
    100% {
