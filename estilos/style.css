@@ -1,6 +1,6 @@
  body {
    font-family: Arial, sans-serif;
-   background-image: url('https://tinypic.host/images/2025/04/19/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg');
+   background-image: url('https://tinypic.host/images/2025/04/27/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg');
    background-position: center;
    background-repeat: no-repeat;
    display: flex;
@@ -16,7 +16,8 @@
    background-color: #1e1e1e80;
    padding: 50px;
    border-radius: 10px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /*x,y,blur,color*/
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   /*x,y,blur,color*/
    margin-bottom: 50px;
  }
 
@@ -62,35 +63,50 @@
  }
 
  #botones {
-   display: inline-block;
-   gap: 10px;
+
+   display: flex;
+   justify-content: center;
+   align-items: baseline;
+   margin-top: 30px;
+   gap: 15px;
+
  }
 
+
  input[type="submit"] {
-   background-color: #00cc88;
-   color: white;
+   background: none;
+   color: rgb(0, 170, 119);
    border: none;
    padding: 12px 24px;
    border-radius: 6px;
    cursor: pointer;
    animation: brilloLate 2s infinite ease-in-out;
-   transition: transform 0.3s ease, background-color 0.3s ease; /*transition:propiedad-duración-timing*/
-   gap: 10px;  /*ease inicio y final suave*/
-   width: 84px;
+   transition: transform 0.3s ease, background-color 0.3s ease;
+   /*transition:propiedad-duración-timing*/
+   gap: 10px;
+   /*ease inicio y final suave*/
+   width: 150px;
+   border: 2px solid #00aa77;
+   /* Añadí borde para mejor definición */
+   font-weight: 600;
+   letter-spacing: 0.5px;
  }
 
  input[type="submit"]:hover {
    transform: scale(1.05);
    background-color: rgb(0, 170, 119);
+   color: whitesmoke;
  }
 
  @keyframes brilloLate {
    0% {
-     box-shadow: 0 0 5px #00cc88; /*reesplandor sutil*/
+     box-shadow: 0 0 5px #00cc88;
+     /*reesplandor sutil*/
    }
 
    50% {
-     box-shadow: 0 0 20px #00ffae; /*aumenta intensidad*/
+     box-shadow: 0 0 20px #00ffae;
+     /*aumenta intensidad*/
    }
 
    100% {
@@ -101,18 +117,27 @@
 
  #cancelar {
    background: none;
-   border: none;
-   color: rgb(0, 170, 119);
+   border: 0.5px solid grey;
+   color: grey;
    cursor: pointer;
-   padding: 12px 15px;
-   transition: color 0.3s ease;
+   padding: 12px 24px;
+   transition: all 0.3s ease;
    border-radius: 6px;
+   width: 150px;
+   font-weight: 600;
+   letter-spacing: 0.5px;
+   box-shadow: 0 0 10px rgba(244, 250, 245, 0.8);
  }
 
  #cancelar:hover {
-   color: #ff0000;
+   color: whitesmoke;
+   box-shadow: 0 0 10px rgba(194, 0, 0, 0.8);
+   border: 0.5px solid red;
+   background-color: red;
+   transform: scale(1.05);
 
  }
+
 
  p {
    margin: 10px 0 5px;
@@ -133,7 +158,7 @@
 
 
  .custom-cursor {
-   cursor: url('https://iili.io/30UPi6x.th.png'), auto;
+   cursor: url('https://iili.io/3WAr3v9.png'), auto;
  }
 
 
