@@ -152,8 +152,6 @@
    border-color: #f1f7f1;
    box-shadow: 0 0 10px rgba(244, 250, 245, 0.8);
    /*x, y, radio difuminado*/
-   transform: scale(1.05);
-   transition: all 0.3s ease;
  }
 
 
