@@ -1,6 +1,6 @@
  body {
    font-family: Arial, sans-serif;
-   background-image: url('https://tinypic.host/images/2025/04/27/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg');
+   background-image: url('https://tinypic.host/images/2025/05/07/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg');
    background-position: center;
    background-repeat: no-repeat;
    display: flex;
@@ -28,7 +28,13 @@
    font-size: 350%;
    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
  }
-
+ h2 {
+  margin: 50px auto;
+  justify-content: center;
+  color: whitesmoke;
+  font-size: 250%;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
  label {
    display: block;
    margin-bottom: 5px;
@@ -37,11 +43,7 @@
    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
  }
 
- input[type="text"],
- input[type="number"],
- input[type="password"],
- input[type="date"],
- input[type="email"],
+ #nombre,#edad,#password,#fecha,#email,
  textarea,
  select {
    color: #5c5c5c;
@@ -156,7 +158,7 @@
 
 
  .custom-cursor {
-   cursor: url('https://iili.io/3WRwRG1.th.png'), auto;
+   cursor: url('https://iili.io/3eftZ3x.png'), auto;
  }
 
 
