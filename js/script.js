@@ -12,7 +12,8 @@ contenedor.innerHTML = `
       </p>
       <p><strong>Comentarios:</strong> ${searchParams.get("comentarios") || 'Ninguno'}</p>
       <p><strong>Suscripción:</strong> ${searchParams.get("suscripcion")}</p>
-      <p><strong>Fecha de nacimiento:</strong> ${searchParams.get("fecha")}</p>
+      <p><strong>Fecha de nacimiento:</strong> ${searchParams.get("fecha")}</p><br>
+      <a href= "form.html"  class="volver">Volver</a>
   </div>
   `;
 
