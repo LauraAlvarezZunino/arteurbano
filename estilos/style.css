@@ -1,6 +1,6 @@
  body {
    font-family: Arial, sans-serif;
-   background-image: url('https://tinypic.host/images/2025/05/07/max-van-den-oetelaar-uymG7UVPXpI-unsplash.jpg');
+   background-image: url('../img/fondo.jpg');
    background-position: center;
    background-repeat: no-repeat;
    display: flex;
@@ -195,14 +195,14 @@
 
  
 .volver {
-  display: inline-block;
+  float: right;
+  display: flex;
   background-color:rgba(4, 15, 26, 0.27);
   color: whitesmoke;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
   margin-right: 20px;
-  float: right;
   border: 0.5px solid grey;
   letter-spacing: 0.5px;
   cursor: pointer;
